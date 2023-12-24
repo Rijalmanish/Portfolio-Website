@@ -1,0 +1,1827 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+/* =========================================================================================================== */
+
+
+:root {
+    --para: rgb(121, 109, 108);
+    --nevtext: rgb(245, 245, 245);
+    --para-tint: rgb(83, 65, 189);
+    --white: #fff;
+    --black: #000000;
+    --helper: rgb(8, 50, 96);
+    --overlay: rgb(91, 72, 209);
+    --bg: rgb(249 249 255);
+    --navbg: rgb(24, 22, 22);
+    --shadow: 0px 0px 20px 0px rgba(132, 144, 255, 0.362);
+    --shadowSupport: 0 2rem 2rem 0 rgba(132, 144, 255, 0.415);
+    --h3: rgb(51, 39, 117);
+    --h1: rgb(245, 245, 245);
+    --textstroke: rgb(91, 72, 209);
+    --about-box: rgb(24, 22, 22);
+    --violet: rgb(91, 72, 209);
+
+}
+
+/* =========================================================================================================== */
+
+
+html {
+    font-size: 62.2%;
+    scroll-behavior: smooth;
+}
+
+/* =========================================================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========================================================================================================== */
+
+h1 {
+    color: var(--white);
+    font-size: 7rem;
+    font-weight: 800;
+    -webkit-text-stroke: 0.4rem var(--textstroke);
+}
+
+h2 {
+    color: var(--white);
+    font-size: 5.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--h3);
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--para-tint);
+    line-height: 3rem;
+}
+
+
+
+p {
+    color: var(--para);
+    line-height: 1.6;
+    font-size: 1.35rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ========================================================================================== */
+
+/* Reusable code section  */
+
+
+
+.btn {
+    background-color: var(--helper);
+    padding: 0.8rem 2.2rem;
+    border: none;
+    border-radius: 25px;
+}
+
+.btn:hover,
+.btn:active {
+
+    transition: all 1sec linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+
+}
+
+/* =============================================================================== */
+
+body{
+   background: var(--black); 
+}
+
+.nav {
+    background-color: var(--navbg);
+    padding: 0.3rem;
+    position: sticky;
+    top: 0.1rem;
+    z-index: 9999;
+
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+
+}
+
+.logos {
+    width: 18rem;
+    height: 5rem;
+    margin: 1rem 10rem 1rem 1rem;
+}
+
+.mobile-icon {
+    display: none;
+}
+
+
+.menue-none {
+    width: 82%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-option {
+    width: 81%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+
+/* navtext */
+
+.navtext {
+    font: 1.3em sans-serif;
+    color: var(--nevtext);
+}
+
+.navtext:hover {
+    transition: all 1sec linear;
+    font: 1.33em sans-serif;
+    text-shadow: 4px 4px 4px var(--para);
+}
+
+.down-text {
+    font: 1em sans-serif;
+    color: var(--nevtext);
+}
+
+.down-text:hover {
+    transition: all 1sec linear;
+    font: 1.02em sans-serif;
+    text-shadow: 4px 4px 4px var(--para);
+}
+
+
+/* home start */
+
+.homecontainer {
+    background: var(--black);
+    display: flex;
+    padding: 12rem 22rem 12rem 22rem;
+    gap: 5rem;
+}
+
+.home-text {
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.home-p {
+    font-size: 1.7rem;
+}
+
+.home-btn-contract {
+    padding: 1.3rem 4rem 1.3rem 4rem;
+    border-radius: 0.5rem;
+    margin: 3rem 2rem 1rem 0rem;
+}
+
+.home-btn-more {
+
+    border: 0.2rem solid var(--white);
+    padding: 1.3rem 4rem 1.3rem 4rem;
+    border-radius: 0.5rem;
+    background: var(--black);
+    color: var(--nevtext);
+}
+
+/* pic */
+
+.home-personal-pic {
+    width: 40rem;
+    margin: -3rem 1rem 0rem 2rem;
+
+}
+
+/* about me */
+
+.aboutcontainer {
+    background: var(--black);
+    display: flex;
+    padding: 12rem 22rem 0rem 22rem;
+    gap: 12rem;
+}
+
+.about-personal-pic {
+    position: relative;
+    top: -15rem;
+    right: 5rem;
+}
+
+.about-h2 {
+    font-size: 3rem;
+}
+
+.about-h3 {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.about-box {
+    display: flex;
+    gap: 1rem;
+    border-radius: 1rem;
+    background: var(--about-box);
+    padding: 2rem 0rem 2rem 1rem;
+    margin: 2rem 0rem 1rem 0rem;
+}
+
+.about-img {
+    width: 7rem;
+    height: 5rem;
+    position: relative;
+    top: 1rem;
+}
+
+/* biography */
+
+.text-center {
+    margin-left: 33%;
+}
+
+.biogtaphycontainer {
+    background: var(--black);
+    padding: 5rem 22rem 1rem 22rem;
+}
+
+.biographyflex {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 5rem; */
+}
+
+.h22 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--para-tint);
+}
+
+.span-txt {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--para-tint);
+    line-height: 3rem;
+    line-height: 7rem;
+}
+
+.span-text {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: var(--para);
+    line-height: 7rem;
+    padding-left: 10rem;
+}
+
+.li-dot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot {
+    font-size: 3rem;
+}
+
+/* education Qualification */
+
+.qulificationcontainer {
+    background: var(--black);
+    padding: 12rem 22rem 5rem 22rem;
+}
+
+.qualification-h2 {
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.qulafi-h3 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--para-tint);
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.qualification {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.course1 {
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.qua-h2-1 {
+    font-size: 2rem;
+    text-align: left;
+    color: var(--para-tint);
+    font-weight: 700;
+    margin-bottom: 0rem;
+    text-transform: capitalize;
+}
+
+.qua-h2-2 {
+    font-size: 2rem;
+    text-align: left;
+    color: var(--footre);
+    font-weight: 100;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+.qua-btn {
+    width: 17rem;
+    text-align: center;
+    background: var(--violet);
+    color: var(--white);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-h2 {
+    text-align: left;
+    font-weight: 800;
+    margin-left: 3rem;
+}
+
+/* my skills */
+
+.skillscontainer {
+    background: var(--black);
+    padding: 0rem 22rem 8rem 22rem;
+}
+
+.skill-h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.skill-h3 {
+    font-size: 4rem;
+    font-weight: 750;
+    margin-bottom: 1rem;
+    color: var(--textstroke);
+}
+
+.skill-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10rem;
+}
+
+.skill-ex {
+    font-size: 2.3rem;
+    line-height: 4rem;
+    font-weight: 750;
+    text-transform: none;
+    margin-bottom: 4rem;
+}
+
+.skill-box {
+    display: flex;
+    width: 45rem;
+}
+
+.skills-flex {
+    flex-direction: row;
+    display: flex;
+    padding-bottom: 0.5rem;
+}
+
+.skill-icon {
+    font-size: 4rem;
+    color: var(--bg);
+    padding-right: 2rem;
+}
+
+.skill-span {
+    font-size: 1.5rem;
+    color: var(--white);
+    display: flex;
+    font-weight: 700;
+}
+
+.skill-bracket {
+    width: 30rem;
+    border: 0rem solid var(--white);
+    border-radius: 10px;
+    background: var(--bg);
+}
+
+
+.skill-bracket-color1 {
+    width: 21rem;
+    border: 0.4rem solid var(--para-tint);
+    border-radius: 10px;
+}
+
+.skill-bracket-color2 {
+    width: 25.5rem;
+    border: 0.4rem solid var(--para-tint);
+    border-radius: 10px;
+}
+
+.skill-bracket-color3 {
+    width: 9rem;
+    border: 0.4rem solid var(--para-tint);
+    border-radius: 10px;
+}
+
+.skill-bracket-color4 {
+    width: 20rem;
+    border: 0.4rem solid var(--para-tint);
+    border-radius: 10px;
+}
+
+.skill-flex-below {
+    display: flex;
+    flex-direction: column;
+}
+
+.a {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.8rem;
+}
+
+
+/* my services */
+
+.servicescontainer {
+    background: var(--black);
+    padding: 12rem 22rem 1rem 22rem;
+}
+
+.service-h2 {
+    margin: auto;
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+}
+
+.service-flex {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.service-box {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-img {
+    width: 5rem;
+}
+
+.product-text {
+    font-size: 1.5rem;
+    color: var(--violet);
+    padding: 2rem 0rem 0rem 0rem;
+}
+
+.service-p {
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+/* my projects */
+
+.projectcontainer {
+    background: var(--black);
+    padding: 12rem 22rem 1rem 22rem;
+}
+
+.project-h2 {
+    font-weight: 500;
+}
+
+.ptoject-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-img {
+    width: 30rem;
+    height: 20rem;
+    margin: 2rem 0rem 1rem 0rem;
+    border-radius: 0.8rem;
+}
+
+/* my blogs */
+
+.blogscontainer {
+    background: var(--black);
+    padding: 12rem 22rem 1rem 22rem;
+}
+
+.blog-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.blog-box {
+    padding-bottom: 4rem;
+}
+
+.blogs-p {
+    font-size: 1.17rem;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-weight: 100;
+}
+
+.blogs-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.blog-icon {
+    font-size: 1.97rem;
+}
+
+
+/* customers say */
+
+.saycontainer {
+    background: var(--black);
+    padding: 12rem 22rem 1rem 22rem;
+}
+
+
+/* contract */
+
+.contractcontainer {
+    background: var(--black);
+    padding: 12rem 22rem 1rem 22rem;
+}
+
+.contract-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contract-info {
+    width: 50rem;
+    background: var(--navbg);
+    padding: 5rem 8rem 4rem 8rem;
+    border-radius: 2rem;
+}
+
+.contract-info-h2 {
+    color: var(--para-tint);
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+
+.contract-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.contract-email-icon {
+    font-size: 3rem;
+    color: var(--violet);
+    border: 0.3rem solid var(--white);
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin-right: 2rem;
+}
+
+.contract-email-text {
+    font-size: 1rem;
+    color: var(--white);
+    line-height: 1rem;
+}
+
+.con-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--para-tint);
+}
+
+.contract-email-p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--bg);
+}
+
+.contract-information {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+    color: var(--white);
+    font-weight: 800;
+}
+
+.contract-icons {
+    font-size: 2.5rem;
+    color: var(--violet);
+    border: 0.2rem solid var(--violet);
+    padding: 0.3rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+
+.massage-input {
+    width: 34rem;
+    color: var(--white);
+    background-color: var(--overlay);
+    padding: 1rem 2rem 1rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.inputs-mess {
+    height: 12rem;
+    padding: 0rem 2rem 1rem 2rem;
+}
+
+.message-btn {
+    border-radius: 0.7rem;
+    color: var(--white);
+    font-weight: 700;
+    height: 4rem;
+}
+
+/* footer */
+
+.footercontainer {
+    background: var(--black);
+    padding: 4rem 0rem 1rem 0rem;
+}
+
+.footer-box {
+    background: var(--helper);
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
+/* scrool */
+
+.scrollTop-style {
+    color: var(--violet);
+    font-size: 2.5rem;
+    border: 0.3rem solid var(--para);
+    border-radius: 50%;
+    position: fixed;
+    top: 91%;
+    left: 95%;
+    bottom: 5%;
+    z-index: 1;
+    scroll-behavior: smooth;
+    transition: all 0.1s linear;
+    padding: 0.5rem;
+    background: var(--navbg);
+}
+
+
+
+.slide {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.slider-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.slider-bg {
+    background-color: var(--black);
+    padding: 2rem 0rem 2rem 1rem;
+}
+
+
+.slide {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.slide-box {
+    width: 30rem;
+    background: var(--navbg);
+    padding: 2rem 2rem 2rem 2rem;
+    margin: 1rem 1rem 1rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.img-box {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.6rem;
+    justify-content: space-around;
+}
+
+.img-box1 {
+    width: 5.8rem;
+    height: 5.8rem;
+    border: 0.4rem solid var(--white);
+    border-radius: 50%;
+}
+
+.slide-flex {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.slide-span {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--white);
+    padding-bottom: 0.8rem;
+}
+
+.slide-emoji {
+    color: var(--violet);
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+.slide-pp {
+    font-size: 0.9rem;
+    color: var(--para);
+
+}
+
+.slide-p {
+    font-size: 1rem;
+    color: var(--para);
+    padding-bottom: 1.3rem;
+
+}
+
+.slide-txt {
+    font-size: 1rem;
+    color: var(--violet);
+
+}
+
+#ppp {
+    font-size: 3rem;
+}
+
+.flex-slide {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.menu-icon {
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.mobile-menue {
+    display: none;
+    width: 40rem;
+    background: var(--para-tint);
+    position: absolute;
+    bottom: 4rem;
+}
+
+.mobile:active .mobile-menue {
+    display: block;
+}
+
+.movile-menue-show {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.menu-icon:hover {
+    font-size: 3.1rem;
+}
+
+
+
+/* Add this media query for tablets */
+@media only screen and (max-width: 1450px) {
+    html {
+        font-size: 60%;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+}
+
+@media only screen and (max-width: 1390px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+
+@media only screen and (max-width: 1280px) {
+    html {
+        font-size: 50%;
+    }
+
+    .scrollTop-style {
+        left: 91%;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+    html {
+        font-size: 45%;
+    }
+
+    .scrollTop-style {
+        left: 91%;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    html {
+        font-size: 45%;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .homecontainer {
+        padding: 12rem 10rem 12rem 10rem;
+    }
+
+    .aboutcontainer {
+        padding: 12rem 10rem 0rem 10rem;
+    }
+
+    .biogtaphycontainer {
+        padding: 12rem 10rem 1rem 10rem;
+    }
+
+    .qulificationcontainer {
+        padding: 12rem 10rem 5rem 10rem;
+    }
+
+    .skillscontainer {
+        padding: 0rem 10rem 8rem 10rem;
+    }
+
+    .servicescontainer {
+        padding: 12rem 10rem 1rem 10rem;
+    }
+
+    .scrollTop-style {
+        left: 91%;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 870px) {
+    html {
+        font-size: 45%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .homecontainer {
+        padding: 12rem 2rem 12rem 2rem;
+    }
+
+    .aboutcontainer {
+        padding: 12rem 2em 0rem 2rem;
+    }
+
+    .biogtaphycontainer {
+        padding: 12rem 2rem 1rem 2rem;
+    }
+
+    .qulificationcontainer {
+        padding: 12rem 2rem 5rem 2rem;
+    }
+
+    .skillscontainer {
+        padding: 0rem 2rem 8rem 2rem;
+    }
+
+    .servicescontainer {
+        padding: 12rem 2rem 1rem 2rem;
+    }
+
+    .scrollTop-style {
+        left: 91%;
+    }
+
+}
+
+@media only screen and (max-width: 755px) {
+    html {
+        font-size: 50%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .homecontainer {
+        padding: 12rem 2rem 12rem 2rem;
+    }
+
+    .aboutcontainer {
+        padding: 12rem 2em 0rem 2rem;
+    }
+
+    .biogtaphycontainer {
+        padding: 12rem 2rem 1rem 2rem;
+    }
+
+    .qulificationcontainer {
+        padding: 12rem 2rem 5rem 2rem;
+    }
+
+    .skillscontainer {
+        padding: 0rem 2rem 8rem 2rem;
+    }
+
+    .servicescontainer {
+        padding: 12rem 2rem 1rem 2rem;
+    }
+
+    .home-personal-pic {
+        width: 30rem;
+        margin: 8rem 1rem 0rem 2rem;
+    }
+
+    .about-pic {
+        display: none;
+    }
+
+    .text-center {
+        margin-left: 25%;
+    }
+
+    .biographyflex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .qualification {
+        display: flex;
+
+        gap: 8rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-flex {
+        gap: 1rem;
+    }
+
+    .ptoject-flex {
+        flex-wrap: wrap;
+    }
+
+    .contract-email-p {
+        font-size: 1.3rem;
+    }
+
+    .scrollTop-style {
+        left: 91%;
+    }
+
+}
+
+@media only screen and (max-width: 870px) {
+    html {
+        font-size: 45%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .homecontainer {
+        padding: 12rem 2rem 12rem 2rem;
+    }
+
+    .aboutcontainer {
+        padding: 12rem 2em 0rem 2rem;
+    }
+
+    .biogtaphycontainer {
+        padding: 12rem 2rem 1rem 2rem;
+    }
+
+    .qulificationcontainer {
+        padding: 12rem 2rem 5rem 2rem;
+    }
+
+    .skillscontainer {
+        padding: 0rem 2rem 8rem 2rem;
+    }
+
+    .servicescontainer {
+        padding: 12rem 2rem 1rem 2rem;
+    }
+
+    .scrollTop-style {
+        left: 91%;
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+    html {
+        font-size: 50%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+
+    .homecontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 12rem 2rem 0rem 2rem;
+        text-align: center;
+    }
+
+    .aboutcontainer {
+        padding: 12rem 2em 0rem 2rem;
+    }
+
+    .biogtaphycontainer {
+        padding: 12rem 2rem 1rem 2rem;
+    }
+
+    .qulificationcontainer {
+        padding: 12rem 2rem 5rem 2rem;
+    }
+
+    .skillscontainer {
+        padding: 0rem 2rem 8rem 2rem;
+    }
+
+    .servicescontainer {
+        padding: 12rem 2rem 1rem 2rem;
+    }
+
+
+
+    .logos {
+        margin: 1rem -2rem 1rem -1rem;
+    }
+
+
+    .home-personal-pic {
+        width: 25rem;
+        margin: 0rem 2rem 0rem 2rem;
+    }
+
+    .about-h2 {
+        text-align: center;
+    }
+
+    .about-pic {
+        display: none;
+    }
+
+    .text-center {
+        margin-left: 0%;
+    }
+
+    .biographyflex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .span-text {
+        font-size: 2rem;
+    }
+
+    .qualification {
+        display: flex;
+
+        gap: 8rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-flex {
+        gap: 1rem;
+    }
+
+    .ptoject-flex {
+        flex-wrap: wrap;
+    }
+
+    .slider-flex {
+        flex-direction: column;
+    }
+
+    .contract-email-p {
+        font-size: 1.3rem;
+    }
+
+    .contract-flex {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contract-info {
+        border-radius: 1rem;
+    }
+
+    .service-flex {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .scrollTop-style {
+        left: 91%;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 870px) {
+    html {
+        font-size: 45%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .homecontainer {
+        padding: 12rem 2rem 12rem 2rem;
+    }
+
+    .aboutcontainer {
+        padding: 12rem 2em 0rem 2rem;
+    }
+
+    .biogtaphycontainer {
+        padding: 12rem 2rem 1rem 2rem;
+    }
+
+    .qulificationcontainer {
+        padding: 12rem 2rem 5rem 2rem;
+    }
+
+    .skillscontainer {
+        padding: 0rem 2rem 8rem 2rem;
+    }
+
+    .servicescontainer {
+        padding: 12rem 2rem 1rem 2rem;
+    }
+
+    .scrollTop-style {
+        left: 91%;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 45%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .homecontainer {
+        padding: 12rem 2rem 12rem 2rem;
+    }
+
+    .aboutcontainer {
+        padding: 12rem 2em 0rem 2rem;
+    }
+
+    .biogtaphycontainer {
+        padding: 12rem 2rem 1rem 2rem;
+    }
+
+    .qulificationcontainer {
+        padding: 12rem 2rem 5rem 2rem;
+    }
+
+    .skillscontainer {
+        padding: 0rem 2rem 8rem 2rem;
+    }
+
+    .servicescontainer {
+        padding: 12rem 2rem 1rem 2rem;
+    }
+
+    .scrollTop-style {
+        left: 91%;
+    }
+
+
+    .nav-flex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .mobile-icon {
+        display: block;
+        font-size: 4rem;
+        padding: 0.5rem;
+        color: var(--white);
+        border: 0.3rem solid var(--white);
+        position: relative;
+        left: 60%;
+    }
+
+
+
+    .nav-option1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 7rem;
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
+        width: 82%;
+        height: 99%;
+        background: var(--para-tint);
+        font-size: 2.5rem;
+    }
+
+    .menue-none {
+        visibility: hidden;
+        opacity: 0;
+
+    }
+
+
+    .mobile-icon2 {
+        display: block;
+        font-size: 4rem;
+        padding: 0.5rem;
+        color: var(--white);
+        border: 0.3rem solid var(--white);
+        position: absolute;
+        left: 86%;
+        top: 4%;
+    }
+
+    /* .mobile-icon:hover + .menue-none,
+    .menue-none:hover + .mobile-icon2 {
+      visibility: visible;
+      opacity: 1;
+    } */
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 45%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+
+    .homecontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 12rem 2rem 0rem 2rem;
+        text-align: center;
+    }
+
+    .aboutcontainer {
+        padding: 12rem 2em 0rem 2rem;
+    }
+
+    .biogtaphycontainer {
+        padding: 12rem 2rem 1rem 2rem;
+    }
+
+    .qulificationcontainer {
+        padding: 12rem 2rem 5rem 2rem;
+    }
+
+    .skillscontainer {
+        padding: 0rem 1rem 8rem 1rem;
+    }
+
+    .servicescontainer {
+        padding: 12rem 2rem 1rem 2rem;
+    }
+
+
+
+    .logos {
+        margin: 1rem -2rem 1rem -1rem;
+    }
+
+
+    .nav-flex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .mobile-icon {
+        display: block;
+        font-size: 4rem;
+        padding: 0.5rem;
+        color: var(--white);
+        border: 0.3rem solid var(--white);
+        position: relative;
+        left: 49%;
+    }
+
+
+
+    .nav-option1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 7rem;
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
+        width: 100%;
+        height: 99%;
+        background: var(--para-tint);
+        font-size: 2.5rem;
+    
+    }
+
+    .menue-none {
+        visibility: hidden;
+        opacity: 0;
+
+    }
+
+
+    .mobile-icon2 {
+        display: block;
+        font-size: 4rem;
+        padding: 0.5rem;
+        color: var(--white);
+        border: 0.3rem solid var(--white);
+        position: absolute;
+        left: 86%;
+        top: 4%;
+    }
+
+    /* .mobile-icon:hover + .menue-none,
+    .menue-none:hover + .mobile-icon2 {
+      visibility: visible;
+      opacity: 1;
+    } */
+
+
+    .display-none {
+        display: none
+    }
+
+
+    .home-personal-pic {
+        width: 25rem;
+        margin: 0rem 2rem 0rem 2rem;
+    }
+
+    .about-h2 {
+        text-align: center;
+    }
+
+    .about-pic {
+        display: none;
+    }
+
+    .text-center {
+        margin-left: 0%;
+    }
+
+    .biographyflex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .span-txt {
+        font-size: 1.5rem;
+    }
+
+    .span-text {
+        font-size: 1.5rem;
+    }
+
+    .qualification {
+        display: flex;
+        gap: 8rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .course1 {
+        width: 35rem;
+        padding: 4rem 1rem 4rem 1rem;
+    }
+
+    .service-flex {
+        gap: 1rem;
+    }
+
+    .ptoject-flex {
+        flex-wrap: wrap;
+    }
+
+    .slider-flex {
+        flex-direction: column;
+    }
+
+    .contract-email-p {
+        font-size: 1.3rem;
+    }
+
+    .contract-flex {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contract-info {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        width: 100%;
+        padding: 4rem 0rem 4rem 0rem;
+    }
+
+    .contract-information {
+        font-size: 1.2rem;
+    }
+
+    .service-flex {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .massage-input {
+        width: 28rem;
+    }
+
+    .scrollTop-style {
+        left: 87%;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 260px) {
+    html {
+        font-size: 40%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+
+    .homecontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 12rem 2rem 0rem 2rem;
+        text-align: center;
+    }
+
+    .aboutcontainer {
+        padding: 12rem 2em 0rem 2rem;
+    }
+
+    .biogtaphycontainer {
+        padding: 12rem 2rem 1rem 2rem;
+    }
+
+    .qulificationcontainer {
+        padding: 12rem 2rem 5rem 2rem;
+    }
+
+    .skillscontainer {
+        padding: 0rem 1rem 8rem 1rem;
+    }
+
+    .servicescontainer {
+        padding: 12rem 2rem 1rem 2rem;
+    }
+
+
+    .nav-flex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .mobile-icon {
+        display: block;
+        font-size: 4rem;
+        padding: 0.5rem;
+        color: var(--white);
+        border: 0.3rem solid var(--white);
+        position: relative;
+        left: 45%;
+    }
+
+
+
+    .nav-option1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 7rem;
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
+        width: 82%;
+        height: 99%;
+        background: var(--para-tint);
+        font-size: 2.5rem;
+    }
+
+    .menue-none {
+        visibility: hidden;
+        opacity: 0;
+
+    }
+
+
+    .mobile-icon2 {
+        display: block;
+        font-size: 4rem;
+        padding: 0.5rem;
+        color: var(--white);
+        border: 0.3rem solid var(--white);
+        position: absolute;
+        left: 86%;
+        top: 4%;
+    }
+
+
+    .logos {
+        margin: 1rem -2rem 1rem -1rem;
+    }
+
+
+    .home-personal-pic {
+        width: 25rem;
+        margin: 0rem 2rem 0rem 2rem;
+    }
+
+    .about-h2 {
+        text-align: center;
+    }
+
+    .about-pic {
+        display: none;
+    }
+
+    .text-center {
+        margin-left: 0%;
+    }
+
+    .biographyflex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .span-txt {
+        font-size: 1.2rem;
+    }
+
+    .span-text {
+        font-size: 1.2rem;
+    }
+
+    .qualification {
+        display: flex;
+        gap: 8rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .course1 {
+        width: 35rem;
+        padding: 4rem 1rem 4rem 1rem;
+    }
+
+    .service-flex {
+        gap: 1rem;
+    }
+
+    .ptoject-flex {
+        flex-wrap: wrap;
+    }
+
+    .slider-flex {
+        flex-direction: column;
+    }
+
+    .contract-email-p {
+        font-size: 1.3rem;
+    }
+
+    .contract-flex {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contract-info {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        width: 100%;
+        padding: 4rem 0rem 4rem 0rem;
+    }
+
+    .contract-information {
+        font-size: 1.2rem;
+    }
+
+    .service-flex {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .massage-input {
+        width: 28rem;
+    }
+
+    .scrollTop-style {
+        left: 87%;
+    }
+}
