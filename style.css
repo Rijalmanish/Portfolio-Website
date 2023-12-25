@@ -1463,7 +1463,7 @@ body{
 
 
     .logos {
-        margin: 1rem -2rem 1rem -1rem;
+        margin: 1rem -30rem 1rem -1rem;
     }
 
 
@@ -1480,7 +1480,7 @@ body{
         color: var(--white);
         border: 0.3rem solid var(--white);
         position: relative;
-        left: 49%;
+        left: 65%;
     }
 
 
@@ -1494,8 +1494,8 @@ body{
         position: fixed;
         top: 0rem;
         left: 0rem;
-        width: 100%;
-        height: 99%;
+        width: 85%;
+        height: 100%;
         background: var(--para-tint);
         font-size: 2.5rem;
     
@@ -1604,7 +1604,7 @@ body{
         flex-direction: column;
         align-items: baseline;
         width: 100%;
-        padding: 4rem 0rem 4rem 0rem;
+        padding: 5rem 0rem 5rem 3rem;
     }
 
     .contract-information {
